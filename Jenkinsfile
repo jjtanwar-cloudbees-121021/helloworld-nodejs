@@ -4,7 +4,7 @@ pipeline {
     stage('Test') {
       agent {
         kubernetes {
-          yamlFile 'nodejs-pod.yaml'
+          yamlFile 'nodjs-pod.yaml'
         }
       }
       steps {
